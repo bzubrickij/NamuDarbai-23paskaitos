@@ -29,7 +29,7 @@ var saliuInfo = [
 
 function valstybes() {
   for (var x of saliuInfo) {
-    var vidurkis = (x.plotas * Number(1000000)) / x.gyventojuSkaicius;
+    var vidurkis = (x.plotas * Number(1000000)) / (x.gyventojuSkaicius * 1000000);
     console.log(vidurkis);
     document.write(
       `<br><br>Šalis: ${x.pavadinimas} joje gyvena ${
